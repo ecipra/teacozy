@@ -4,4 +4,35 @@ body {
   font-size: 22px;
   color: Seashell;
   opacity: 0.9;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 5;
+  height: 69px;
+  width: 100%;
+  background-color: inherit;
+  border-bottom: 1px solid Seashell;
+}
+
+header img {
+  height: 50px;
+  margin-left: 10px;
+}
+
+nav a {
+  text-decoration: underline;
+  margin-right: 10px;
+  color: Seashell;
+  opacity: 0.9;
+}
+
+main {
+  position: relative;
+  top: 69px;
 }
