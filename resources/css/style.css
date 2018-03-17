@@ -8,9 +8,24 @@ body {
   margin: 0;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 h2, h3, h4 {
   margin: 10px auto;
 }
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: -69px;
+  visibility: hidden;
+}
+
+/* Styling for fixed header */
 
 header {
   display: flex;
@@ -37,13 +52,7 @@ nav a {
   opacity: 0.9;
 }
 
-main {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  top: 69px;
-}
+/* Styling for Mission section */
 
 .mission-section {
   display: flex;
@@ -59,6 +68,9 @@ main {
   width: 100%;
   background-color: black;
 }
+
+/* Styling for Featured Teas section */
+
 .featured-tea-section {
   display: flex;
   flex-direction: column;
@@ -79,6 +91,9 @@ main {
 .tea img {
   height: 200px;
 }
+
+/* Styling for Locations section */
+
 .location-section {
   display: flex;
   flex-direction: column;
@@ -93,7 +108,7 @@ main {
 .locations {
   display: flex;
   justify-content: center;
-  margin-top: 15px;
+  margin-top: 5px;
 }
 
 .individual-location {
@@ -101,7 +116,21 @@ main {
   flex-direction: column;
   justify-content: center;
   width: 300px;
-
   background-color: black;
-  margin: 0 40px;
+  margin: 0 20px;
+  opacity: 1;
+}
+
+.contact{
+  min-height: 200px;
+}
+
+/* Styling for Footer */
+/* Note: Made copyright text smaller since base size (22px) looked too big */
+
+footer {
+  font-size: 14px;
+  text-align: left;
+  margin-left: 20px;
+  margin-bottom: 20px;
 }
