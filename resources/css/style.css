@@ -48,8 +48,20 @@ header img {
 nav a {
   text-decoration: underline;
   margin-right: 10px;
+  padding: 5px;
   color: Seashell;
   opacity: 0.9;
+}
+
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Attempted some styled accessibility by turning off user agent outline and adding my own */
+
+nav a:focus {
+  outline: none;
+  border: 1px dashed Seashell;
 }
 
 /* Styling for Mission section */
